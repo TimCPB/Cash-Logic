@@ -10,4 +10,8 @@ describe "withdraw" do
     expect(withdraw(250)).to eq([2, 1, 0])
   end
 
+  it "returns the fewest possible notes for large amounts requiring 20s" do
+    expect(withdraw(230)).to eq([1, 1, 4])
+  end
+
 end
