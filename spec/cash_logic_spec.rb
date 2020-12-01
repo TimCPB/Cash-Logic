@@ -6,4 +6,8 @@ describe "withdraw" do
     expect(withdraw(40)).to eq([0, 0, 2])
   end
 
+  it "returns the fewest possible notes for £250" do
+    expect(withdraw(250)).to eq([2, 1, 0])
+  end
+
 end
