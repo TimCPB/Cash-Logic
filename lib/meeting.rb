@@ -6,5 +6,5 @@ def meeting(s)
     "(#{single_name_array.reverse.join(", ")})"
   end
   p formatted_array
-  formatted_array.join()
+  formatted_array.sort.join()
 end

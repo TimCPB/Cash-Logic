@@ -6,8 +6,8 @@ describe "meeting" do
     expect(meeting("John:Bell;Victoria:Schwarz")).to eq("(BELL, JOHN)(SCHWARZ, VICTORIA)")
   end
 
-  # it "sorts and formates two names" do
-  #   expect(meeting("Victoria:Schwarz;John:Bell")).to eq("(BELL, JOHN)(SCHWARZ, VICTORIA)")
-  # end
+  it "sorts and formates two names" do
+    expect(meeting("Victoria:Schwarz;John:Bell")).to eq("(BELL, JOHN)(SCHWARZ, VICTORIA)")
+  end
 
 end
