@@ -14,4 +14,9 @@ describe "withdraw" do
     expect(withdraw(230)).to eq([1, 1, 4])
   end
 
+  it "fulfills all requirements" do
+    expect(withdraw(260)).to eq([2, 0, 3])
+    expect(withdraw(60)).to eq([0, 0, 3])
+  end
+
 end
